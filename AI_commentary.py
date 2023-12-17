@@ -2,8 +2,7 @@ from openai import OpenAI
 import sqlite3
 from pprint import pprint
 import time
-
-api_key = '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'
+from credentials import api_key
 
 client = OpenAI(
   api_key=api_key,  # this is also the default, it can be omitted
