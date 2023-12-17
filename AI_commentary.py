@@ -53,7 +53,7 @@ def get_progress():
 # Start from the last saved progress
 start_line = get_progress()
 
-with open('output.txt', 'r', encoding='utf-8') as file:
+with open('genesis.txt', 'r', encoding='utf-8') as file:
     for line_number, line in enumerate(file, start=start_line):
         # Assuming the reference is separated by space or tab
         parts = line.strip().split(None, 1)
